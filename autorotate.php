@@ -62,6 +62,14 @@
 	} 
 	
 	
+	function rotateImage($filename) {
+		
+		$image = new Imagick($filename); 
+		autoRotateImage($image); 
+		$image->writeImage($filename);	
+				
+	}	
+	
 	kirby()->hook('panel.file.*', function($file, $oldFile = null) {
 		
 		if (c::get('autorotate.enabled', true)) {
@@ -69,15 +77,17 @@
 			$filepath = kirby()->roots()->content() . DS . $file->diruri();
 			
 			if (is_image($filepath)) {
-				$image = new Imagick($filepath); 
-				autoRotateImage($image); 
-				$image->writeImage($filepath);		
+	
+				rotateImage($filepath)
+				
 			}
 		
 		}
 		
 		
 	});
+	
+
 	
 	
 
