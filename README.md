@@ -39,6 +39,8 @@ This plugin only autorotates images that have EXIF orientation flags, in both la
 
 If an image has been edited and it's orientation changed prior to uploading, this plugin will have no effect.
 
+For this plugin to work it requires that Imagick has been compiled against ImageMagick version 6.3.0 or higher.
+
 ## Looking for images to test?
 Check out [recurser/exif-orientation-examples](https://github.com/recurser/exif-orientation-examples)
 
