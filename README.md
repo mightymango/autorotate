@@ -16,35 +16,28 @@ kirby plugin:install mightymango/autorotate
 ```
 
 ### 2. Manual
-[Download this archive](https://github.com/mightymango/autorotate.git), extract it and rename it to `autorotate`. Copy the folder to your `site/plugins` folder.
+[Download this archive](https://github.com/mightymango/autorotate/archive/v1.0.zip), extract it and rename it to `autorotate`. Copy the folder to your `site/plugins` folder.
 
 ### 3. Git Submodule
 If you know your way around git, you can download this as a submodule:
 
 ```
-git submodule add https://github.com/username/plugin-name/ site/plugins/plugin-name
+git submodule add https://github.com/mightymango/autorotate/ site/plugins/autorotate
 ```
 
 ## Usage
-Describe what the user should do to make the plugin or field work...
+The plugin adds a hook so that any image is processed when it is uploaded.
 
-Add to your blueprint the following:
+## Note
+This plugin only autorotates images that have EXIF orientation flags, in both landscape and portrait orientation. Typically these are images that have been created on an iPhone etc.
 
-```
-  tinyurl:
-    label: Tiny URL
-    type: tinyurl
-    help: Click on field to copy to clipboard
-    width: 1/2
-```
+If an image has been edited and it's orientation changed prior to uploading, this plugin will have no effect.
 
-
-## To-do
-- [ ] This is a to-do item. I try to create to-do for future features as well as for blocking bugs
-- [X] ~~This is a completed to-do with strike-through text.~~
+## Looking for images to test?
+Check out [recurser/exif-orientation-examples](https://github.com/recurser/exif-orientation-examples)
 
 ## Credits
-Don't forget to give credit where it's due!
+Based on code from [orrd101 at yahoo dot com ](http://php.net/manual/en/imagick.getimageorientation.php#111448)
 
 ## License
 MIT
