@@ -37,7 +37,9 @@ If an image has been edited and it's orientation changed prior to uploading, thi
 Check out [recurser/exif-orientation-examples](https://github.com/recurser/exif-orientation-examples)
 
 ## Credits
-Based on code from [orrd101 at yahoo dot com ](http://php.net/manual/en/imagick.getimageorientation.php#111448)
+Based on code from [orrd101 at yahoo dot com ](http://php.net/manual/en/imagick.getimageorientation.php#111448).
+
+Readme file based on template by [Thiousi](https://github.com/Thiousi/kirby-plugin-starterkit)
 
 ## License
 MIT
