@@ -78,7 +78,7 @@
 			
 			if (is_image($filepath)) {
 	
-				rotateImage($filepath)
+				rotateImage($filepath);
 				
 			}
 		
