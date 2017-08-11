@@ -3,9 +3,7 @@
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Kirby Version](https://img.shields.io/badge/Kirby-2.3%2B-red.svg)
 
-Description of plugin for [Kirby](http://getkirby.com)
-
-![Screenshot]( http://placehold.it/888x250?text=Add+screenshots+whenever+possible)
+[Kirby](http://getkirby.com) plugin to automatically rotate images.
 
 ## Installation
 
@@ -14,11 +12,11 @@ Description of plugin for [Kirby](http://getkirby.com)
 If you are using the [Kirby CLI](https://github.com/getkirby/cli) you can install this plugin by running the following command in your shell from the root folder of your Kirby installation:
 
 ```
-kirby plugin:install username/plugin-name
+kirby plugin:install mightymango/autorotate
 ```
 
 ### 2. Manual
-[Download this archive](https://github.com/Thiousi/kirby-plugin-starterkit/archive/master.zip), extract it and rename it to `plugin-name`. Copy the folder to your `site/plugins` folder.
+[Download this archive](https://github.com/mightymango/autorotate.git), extract it and rename it to `autorotate`. Copy the folder to your `site/plugins` folder.
 
 ### 3. Git Submodule
 If you know your way around git, you can download this as a submodule:
@@ -53,4 +51,4 @@ MIT
 
 ## Changelog
 ### 1.0.0
-- Initialial release
+- Initial release
