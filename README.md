@@ -26,7 +26,13 @@ git submodule add https://github.com/mightymango/autorotate/ site/plugins/autoro
 ```
 
 ## Usage
-The plugin adds a hook so that any image is processed when it is uploaded.
+The plugin adds a hook so that any image is automatically processed when it is uploaded.
+
+If you wish to disable the hook for any reason just add the following to your config.php file.
+
+```
+c::set('autorotate.enabled', false);
+```
 
 ## Note
 This plugin only autorotates images that have EXIF orientation flags, in both landscape and portrait orientation. Typically these are images that have been created on an iPhone etc.
