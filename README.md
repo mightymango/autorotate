@@ -53,5 +53,7 @@ Readme file based on template by [Thiousi](https://github.com/Thiousi/kirby-plug
 MIT
 
 ## Changelog
+### 1.0.1
+- Small bug fix
 ### 1.0.0
 - Initial release
