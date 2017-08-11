@@ -37,7 +37,7 @@ c::set('autorotate.enabled', false);
 ## Note
 This plugin only autorotates images that have EXIF orientation flags, in both landscape and portrait orientation. Typically these are images that have been created on an iPhone etc.
 
-If an image has been edited and it's orientation changed prior to uploading, this plugin will have no effect.
+If an image has been edited and it's orientation changed prior to uploading, this plugin will have no effect. Neither will it fix images that have been uploaded before the plugin was installed.
 
 For this plugin to work it requires that Imagick has been compiled against ImageMagick version 6.3.0 or higher.
 
