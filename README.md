@@ -1,7 +1,7 @@
 # AutoRotate
 ![Version](https://img.shields.io/badge/version-1.0.1-green.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
-![Kirby Version](https://img.shields.io/badge/Kirby-2.3.2%2B-red.svg)
+![Kirby Version](https://img.shields.io/badge/Kirby-2.4%2B-red.svg)
 
 [Kirby](http://getkirby.com) plugin to automatically rotate images.
 
