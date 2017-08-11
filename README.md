@@ -28,7 +28,7 @@ git submodule add https://github.com/mightymango/autorotate/ site/plugins/autoro
 ## Usage
 The plugin adds a hook so that any image is automatically processed when it is uploaded.
 
-If you wish to disable the hook for any reason just add the following to your config.php file.
+If you wish to disable the hook for any reason just add the following to your config.php file:
 
 ```
 c::set('autorotate.enabled', false);
