@@ -14,7 +14,7 @@
 
 	function autoRotateImage($image) { 
     
-    $orientation = $image->getImageOrientation(); 
+    	$orientation = $image->getImageOrientation(); 
 
 	if ($orientation != imagick::ORIENTATION_UNDEFINED) {
 		
@@ -57,7 +57,7 @@
 	
 	    // Now make sure the EXIF data is correct
 	    $image->setImageOrientation(imagick::ORIENTATION_TOPLEFT); 
-    }
+    	}
     
 	} 
 	
