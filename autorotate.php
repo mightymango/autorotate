@@ -69,9 +69,9 @@
 			$filepath = kirby()->roots()->content() . DS . $file->diruri();
 			
 			if (is_image($filepath)) {
-				$image = new Imagick($filename); 
+				$image = new Imagick($filepath); 
 				autoRotateImage($image); 
-				$image->writeImage($filename);		
+				$image->writeImage($filepath);		
 			}
 		
 		}
