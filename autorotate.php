@@ -14,7 +14,7 @@
 
 	function autoRotateImage($image) { 
     
-    	$orientation = $image->getImageOrientation(); 
+    $orientation = $image->getImageOrientation(); 
 
 	if ($orientation != imagick::ORIENTATION_UNDEFINED) {
 		
@@ -57,7 +57,7 @@
 	
 	    // Now make sure the EXIF data is correct
 	    $image->setImageOrientation(imagick::ORIENTATION_TOPLEFT); 
-    	}
+    }
     
 	} 
 	
@@ -70,26 +70,30 @@
 				
 	}	
 	
-	kirby()->hook('panel.file.*', function($file, $oldFile = null) {
+	if (detect::imagick()) {
 		
-		if (c::get('autorotate.enabled', true)) {
+		kirby()->hook('panel.file.*', function($file, $oldFile = null) {
 			
-			$filepath = kirby()->roots()->content() . DS . $file->diruri();
-			
-			if (is_image($filepath)) {
-	
-				rotateImage($filepath);
+			if (c::get('autorotate.enabled', true)) {
 				
+				$filepath = kirby()->roots()->content() . DS . $file->diruri();
+				
+				if (is_image($filepath)) {
+		
+					rotateImage($filepath);
+					
+				}
+			
 			}
+			
+			
+		});
+	
+	} else {
 		
-		}
+		die('<span style="color:red;">Imageick</span> needs to be installed for the <strong>AutoRotate</strong> plugin to work.');
 		
-		
-	});
+	}
 	
 
 	
-	
-
-
-
