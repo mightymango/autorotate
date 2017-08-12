@@ -16,7 +16,7 @@ kirby plugin:install mightymango/autorotate
 ```
 
 ### 2. Manual
-[Download this archive](https://github.com/mightymango/autorotate/archive/v1.0.1.zip), extract it and rename it to `autorotate`. Copy the folder to your `site/plugins` folder.
+[Download this archive](https://github.com/mightymango/autorotate/archive/1.0.1.zip), extract it and rename it to `autorotate`. Copy the folder to your `site/plugins` folder.
 
 ### 3. Git Submodule
 If you know your way around git, you can download this as a submodule:
