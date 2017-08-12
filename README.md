@@ -16,7 +16,7 @@ kirby plugin:install mightymango/autorotate
 ```
 
 ### 2. Manual
-[Download this archive](https://github.com/mightymango/autorotate/archive/1.0.1.zip), extract it and rename it to `autorotate`. Copy the folder to your `site/plugins` folder.
+[Download this archive](https://github.com/mightymango/autorotate/archive/1.0.2.zip), extract it and rename it to `autorotate`. Copy the folder to your `site/plugins` folder.
 
 ### 3. Git Submodule
 If you know your way around git, you can download this as a submodule:
@@ -53,6 +53,8 @@ Readme file based on template by [Thiousi](https://github.com/Thiousi/kirby-plug
 MIT
 
 ## Changelog
+### 1.0.2
+- Checks if imageick is installed
 ### 1.0.1
 - Small bug fix
 ### 1.0.0
