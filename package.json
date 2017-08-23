@@ -3,6 +3,6 @@
 "description": "A plugin to autorotate images.",
 "author": "Simon Barrett",
 "license": "MIT",
-"version": "1.0.1",
+"version": "1.0.2",
 "type": "kirby-plugin"
 }
